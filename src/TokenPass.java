@@ -18,13 +18,22 @@ public class TokenPass {
             numToDistribute--;
         }
     }
-    public int gameOver() {
-
-    }
-    public String printBoard() {
-        while ()
-    }
     public void nextPlayer() {
         currentPlayer++;
+    }
+    public int gameOver() {
+        int result = -1;
+        for (int i = 0; i < board.length; i++) {
+            if (board[i] == 0) {
+                result = i;
+            }
+        }
+        return result;
+    }
+    public String printBoard() {
+       String str = "";
+        for (int i = 0; i < board.length; i++) {
+
+        )
     }
 }
